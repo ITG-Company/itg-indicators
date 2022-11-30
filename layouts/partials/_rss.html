@@ -1,0 +1,25 @@
+{{ $data := index .Site.Data .Site.Language.Lang }} 
+
+
+<section class="section section_rss">
+  <div class="container">
+   <div class="row">
+    <h2>{{ i18n "subscribe" }}</h2>
+    <div class="col-md-6">
+      {{ i18n "rss" }}
+    </div>
+    <div class="col-md-6">
+      <form action="#" method="POST" class="rss">
+        
+        <label for="email">
+         {{ i18n "rss-timeout" }}
+        </label>
+        <input type="email" id="email" placeholder="Ввести email...">
+        
+        <input type="submit" value={{ i18n "subscribe-btn"}}>
+      </form>
+    </div>
+   </div>
+  </div>
+</section>
+
